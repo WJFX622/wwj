@@ -1,4 +1,3 @@
-/* 全局样式重置与基础设置 */
 * {
     margin: 0;
     padding: 0;
@@ -744,15 +743,56 @@ footer {
     }
 }
 
-/* 响应式适配 */
-@media (max-width: 1199px) {
+/* 响应式适配 - 三种屏幕尺寸 */
+/* 大屏幕 (桌面, 992px 及以上) */
+@media (min-width: 992px) and (max-width: 1199px) {
     h2 {
         font-size: 2.2rem;
     }
     .home-content h1 {
         font-size: 3.5rem;
     }
+    .about-content {
+        gap: 40px;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+/* 中等屏幕 (平板, 768px 至 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    .nav-list li {
+        margin-left: 25px;
+    }
+    .about-img img {
+        width: 280px;
+        height: 400px;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .contact-content {
+        gap: 40px;
+    }
+    .footer-content {
+        gap: 40px;
+    }
+}
+
+/* 小屏幕 (手机, 767px 及以下) */
 @media (max-width: 767px) {
     h2 {
         font-size: 1.8rem;
@@ -801,6 +841,20 @@ footer {
     .about-img img {
         width: 220px;
         height: 220px;
+        border-radius: 50%;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects-filter {
+        gap: 10px;
+    }
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
     .contact-content {
         gap: 30px;
@@ -810,5 +864,15 @@ footer {
     }
     .footer-content {
         gap: 30px;
+    }
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+        bottom: 20px;
+        right: 20px;
     }
 }
