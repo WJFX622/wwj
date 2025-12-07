@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>高级交互个人作品集</title>
     <!-- 引入外部资源 -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -36,14 +36,16 @@
 
     <!-- 页面容器（单页路由核心） -->
     <div class="page-container">
-        <!-- 首页/个人介绍 -->
+        <!-- 首页 -->
         <section id="home" class="page active" data-page="home">
-            <div class="home-content">
-                <h1>你好，我是WWJ</h1>
-                <p class="subtitle">南宁学院数字经济学院 | 前端开发工程师 | 专注于用户体验与交互设计</p>
-                <div>
-                    <button class="btn" onclick="router.navigateTo('#projects')">查看我的作品</button>
-                    <button class="btn btn-outline" onclick="router.navigateTo('#contact')">联系我</button>
+            <div class="container">
+                <div class="home-content">
+                    <h1>王文静</h1>
+                    <p class="subtitle">前端开发爱好者 | 专注于创建优雅、高效的用户界面和交互体验</p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn" onclick="router.navigateTo('#projects')">查看我的作品</a>
+                        <a href="#contact" class="btn btn-outline" onclick="router.navigateTo('#contact')">联系我</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,10 +56,10 @@
                 <h2>关于我</h2>
                 <div class="about-content">
                     <div class="about-img">
-                        <img src="./images/5.jpg" alt="个人照片">
+                        <img src="./images/profile.jpg" alt="个人照片">
                     </div>
                     <div class="about-text">
-                        <p>我是王文静，南宁学院数字经济学院大数据管理与应用2班学生，专注于前端开发领域的学习与实践，拥有扎实的技术基础和丰富的项目经验。</p>
+                        <p>我是一名对前端开发充满热情的学习者，目前就读于南宁学院数字经济学院大数据管理与应用专业。</p>
                         <p>通过《前端设计综合实践》等课程，系统掌握了HTML5、CSS3、JavaScript等核心技术，熟练运用Flex/Grid布局、动画过渡、响应式设计等高级特性，能够独立完成从需求分析到产品上线的全流程开发。</p>
                         <p>我注重代码的可读性与可维护性，同时追求极致的用户体验，擅长将视觉设计与交互逻辑完美结合。除了前端技术，还具备UI设计、产品思维等相关能力，致力于成为一名全栈型开发人才。</p>
                         <div class="about-highlights">
@@ -247,16 +249,16 @@
                     <div class="contact-form">
                         <form id="contactForm">
                             <div class="form-group">
-                                <label for="name">你的姓名</label>
-                                <input type="text" id="name" class="form-control" placeholder="请输入你的姓名" required>
+                                <label for="name">您的姓名</label>
+                                <input type="text" id="name" class="form-control" placeholder="请输入您的姓名" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">电子邮箱</label>
-                                <input type="email" id="email" class="form-control" placeholder="请输入你的邮箱" required>
+                                <input type="email" id="email" class="form-control" placeholder="请输入您的邮箱" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">留言内容</label>
-                                <textarea id="message" class="form-control" placeholder="请输入你的留言" required></textarea>
+                                <textarea id="message" class="form-control" placeholder="请输入您的留言" required></textarea>
                             </div>
                             <button type="submit" class="btn">发送留言</button>
                         </form>
@@ -268,7 +270,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>电子邮箱</h4>
-                                <p>3452292177@qq.com</p>
+                                <p>2458179123@qq.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -299,10 +301,10 @@
                             </div>
                         </div>
                         <div class="social-links">
-                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-weixin"></i></a>
-                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-qq"></i></a>
-                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-codepen"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-codepen"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -318,7 +320,7 @@
                     <a href="#home" class="logo">
                         <i class="fas fa-code"></i> 我的作品集
                     </a>
-                    <p>专注于前端开发与用户体验设计，持续学习，不断进步。致力于打造高质量、可维护的前端产品。</p>
+                    <p>专注于前端开发，热爱交互设计，追求卓越用户体验。</p>
                 </div>
                 <div class="footer-links">
                     <h4>快速导航</h4>
@@ -355,6 +357,4 @@
     <!-- 引入JS交互文件 -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
-
