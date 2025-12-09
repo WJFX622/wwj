@@ -148,6 +148,9 @@ nav.scroll .logo {
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page.active {
+    background-image:url("https://c-ssl.duitang.com/uploads/blog/202306/17/lGSjy1Ldcx0JLwa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -876,3 +879,4 @@ footer {
         right: 20px;
     }
 }
+
