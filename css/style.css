@@ -54,7 +54,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
+    
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 999;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -148,6 +149,7 @@ nav.scroll .logo {
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page.active {
+    
     background-image:url("https://c-ssl.duitang.com/uploads/blog/202306/17/lGSjy1Ldcx0JLwa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,6 +158,15 @@ nav.scroll .logo {
     transform: translateY(0);
     position: relative;
 }
+.projects {
+  background-image: url("https://c-ssl.duitang.com/uploads/blog/202306/17/lGSjy1Ldcx0JLwa.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f5f5;
+}
+
+
 .page.exit {
     opacity: 0;
     transform: translateY(-20px);
@@ -879,5 +890,3 @@ footer {
         right: 20px;
     }
 }
-
-
